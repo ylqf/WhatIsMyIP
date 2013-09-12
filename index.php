@@ -1,6 +1,8 @@
 <?php
 
-$page = $_REQUEST['action'] ;
+
+
+
 $ip = $_REQUEST['ip'];
 
 if (!$ip) {
@@ -8,16 +10,28 @@ if (!$ip) {
 }
 
 
-echo $ip;
+$url = 'http://freegeoip.net/json/'.$ip;
 
-if (!$page)
+$result = file_get_contents($url);
+
+$ipinfo = json_decode($result);
+
+if (!$ipinfo)
 {
-	$page = 'main';
+	header( 'Location: /?ip='.$_SERVER['REMOTE_ADDR'] ) ;
 }
 
-$title = ucfirst($page).' - IP: '.$ip;
-include 'header.php';
 
 
-include ($page.'.php');
+
+$title = ' IP or Domain: '.$ip;
+
+require ('ads.php');
+
+require ('header.php');
+
+
+require ('main.php');
+
+include ('footer.php');
 

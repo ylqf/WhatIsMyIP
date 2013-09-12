@@ -2,10 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>What is MY IP : <?php echo $title ; ?></title>
+    <title>What is MY IP | <?php echo $title ; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+
+    <meta name="description" content="the information of <?php echo $ip ?>, ip country, ip city, ip location, ip map location, ip whois">
+    <meta name="keywords" content="the information of <?php echo $ip ?>, ip country, ip city, ip location, ip map location, ip whois" />
+    <meta name="author" content="Mohamed Alsemany">
 
     <!-- Le styles -->
     <link href="/src/css/bootstrap.css" rel="stylesheet">
@@ -17,6 +20,19 @@
     <link href="/src/css/bootstrap-responsive.css" rel="stylesheet">
 
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+        
+         <style>
+      html, body, #map-canvas {
+        margin: 0;
+        padding: 0;
+        height: 350px;
+      }
+    </style>
+    
+        
+                           
+      
+      
   </head>
 
   <body>
@@ -34,7 +50,22 @@
             <ul class="nav">
               
             </ul>
+            
+            <form class="navbar-form pull-right" method="post" action="getinfo.php">
+              <input class="span2" type="text" name="ip" placeholder="Enter IP Number" value="<?php echo $ip ?>">
+              <button type="submit" class="btn">Get Information</button>
+            </form>
+            
+            
           </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
+
+<div class="container">
+
+
+<hr />
+
+
+    

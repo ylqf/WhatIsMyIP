@@ -1,9 +1,21 @@
 Hello 
-This is The What Is My IP Address
+This is The What Is My IP PHP Website
+=== Demo ===
 http://whatismyip.serverslab.info/
 
-No need to setup 
-the default admin password is admin:admin
+=== This Software will get === 
+1- IP address for domain
+2- IP Map Location
+3- IP Country
+4- IP Who is Data
+5- IP Region 
+6- IP City
+7- IP Location (Latitude , Longitude)
+8- Searching IP and Domains For information
 
-just go to http://your_web_site/admin 
-and change the advertisment code to show your ads
+
+=== Requerment ===
+Curl 
+
+
+ 
