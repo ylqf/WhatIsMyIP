@@ -14,8 +14,5 @@ http://whatismyip.serverslab.info/
 8- Searching IP and Domains For information
 
 
-=== Requerment ===
-Curl 
-
 
  
