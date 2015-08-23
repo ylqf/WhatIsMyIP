@@ -1,7 +1,7 @@
 Hello 
 This is The What Is My IP PHP Website
 === Demo ===
-http://whatismyip.serverslab.info/
+https://www.iptomaps.com/
 
 === This Software will get === 
 1- IP address for domain
